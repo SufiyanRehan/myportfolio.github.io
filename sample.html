@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohd Sufiyan | Portfolio</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+      display: flex;
+      height: 100vh;
+    }
+    .container {
+      display: flex;
+      width: 100%;
+    }
+    .sidebar {
+      width: 25%;
+      background-color: #1f1f1f;
+      padding: 20px;
+      text-align: center;
+    }
+    .profile-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      border: 4px solid #facc15;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .sidebar h2 {
+      font-size: 1.5rem;
+      margin-bottom: 5px;
+    }
+    .sidebar p {
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+    .sidebar nav a {
+      display: block;
+      padding: 12px;
+      margin: 5px 0;
+      background: #333;
+      color: white;
+      text-decoration: none;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+    .sidebar nav a:hover {
+      background: #facc15;
+      color: #000;
+    }
+    .main-content {
+      flex: 1;
+      padding: 60px;
+      overflow-y: auto;
+    }
+    .greeting {
+      color: #facc15;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .main-content h1 {
+      font-size: 3rem;
+      margin-bottom: 20px;
+    }
+    .highlight {
+      color: #facc15;
+    }
+    .intro {
+      font-size: 1.1rem;
+      color: #ccc;
+      margin-bottom: 30px;
+    }
+    .about-btn {
+      background: #333;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .download-btn {
+      background: #333;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 30px;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+    }
+    .about-btn:hover {
+      background: #facc15;
+      color: #000;
+    }
+    .download-btn:hover {
+      background: #facc15;
+      color: #000;
+    }
+    section {
+      margin-bottom: 60px;
+    }
+    h2.section-title {
+      font-size: 2rem;
+      margin-bottom: 20px;
+      color: #facc15;
+    }
+    ul {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+      color: #ccc;
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .sidebar {
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        display: flex;
+        padding: 15px;
+      }
+      .sidebar nav {
+        display: none;
+      }
+      .main-content {
+        padding: 20px;
+        text-align: center;
+      }
+      .main-content h1 {
+        font-size: 2rem;
+      }
+    }
+    @media (max-width: 480px) {
+      .profile-img {
+        width: 80px;
+        height: 80px;
+      }
+      .about-btn {
+        width: 100%;
+      }
+      .download-btn{
+        width: 100%;
+      }
+    }
+    .skills-list, .experience-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    .skill, .experience {
+      
+      padding: 1rem;
+      border-radius: 8px;
+      flex: 1 1 200px;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .skill i {
+      font-size: 24px;
+    }
+    footer {
+      background-color: #222;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="https://via.placeholder.com/120" alt="Mohd Sufiyan" class="profile-img" />
+      <h2>Mohd Sufiyan</h2>
+      <p>Java Developer</p>
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#Technologies">Technologies</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <section id="home">
+        <p class="greeting">HI THERE !</p>
+        <h1>I'M <span id="typed-name" class="highlight"></span></h1>
+        <p class="intro">
+          I'm a passionate Java Developer with 7+ years of experience. I design scalable, clean APIs and microservices with Spring Boot.
+        </p>
+        <button class="about-btn">About Me 👤</button>
+        
+        <a href="sufiyan_cv.docx" download class="download-btn"> Download CV </a>
+      
+      </section>
+
+      <section id="about">
+        <h2 class="section-title">About Me</h2>
+        <ul>
+          <li>7.3 years hands-on experience in development, analysis, design, testing & implementation of complex software applications.</li>
+          <li>Strong Core Java developer with experience in the financial domain.</li>
+          <li>Experienced in developing, designing, implementing, and evaluating end-to-end systems using Java frameworks like J2EE, Spring Boot, Microservices, REST APIs.</li>
+          <li>Play a pivotal role as part of an agile scrum team developing new applications using Java.</li>
+          <li>Experienced in writing unit tests using JUnit, Mockito, and TestNG.</li>
+          <li>Quick learner with the ability to grasp new technologies in a short period.</li>
+        </ul>
+      </section>
+
+      <section id="education">
+        <h2 class="section-title">Education</h2>
+        <ul>
+            <li>B.E in Computer Science from S.R.T.M University Nanded, Maharashtra in ( 2014 July) with aggregate of 72.26%.</li>
+            <li>Diploma in Computer Science from G.P Beed Maharashtra in (2011) with aggregate 69.38%.</li>
+            <li>10th standard from Secondary education Board in (2008) with an aggregate of78.92%.</li>
+        </ul>
+      </section>
+
+      <section id="Technologies">
+        <h2 class="section-title">Technologies Experties</h2>
+        <div class="skills-list">
+            <div class="skill"><i class="devicon-java-plain colored"></i>Java</div>
+            <div class="skill"><i class="devicon-spring-plain colored"></i>Spring Boot</div>
+            <div class="skill"><i class="devicon-dotnetcore-plain colored"></i>REST API</div>
+            <div class="skill"><i class="devicon-docker-plain colored"></i>Microservices</div>
+            <div class="skill"><i class="devicon-azure-plain colored"></i>Azure</div>
+            <div class="skill"><i class="devicon-apachekafka-plain colored"></i>Kafka</div>
+            <div class="skill"><i class="devicon-docker-plain colored"></i>Docker</div>
+            <div class="skill"><i class="devicon-mysql-plain colored"></i>MySQL</div>
+            <div class="skill"><i class="devicon-oracle-original colored"></i>Oracle</div>
+            <div class="skill"><i class="devicon-junit-plain colored"></i>JUnit</div>
+          </div>
+      </section>
+
+      <section id="contact">
+        <h2 class="section-title">Contact</h2>
+            <h2>Contact</h2>
+            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p>LinkedIn: <a href="#">linkedin.com/in/yourprofile</a></p>
+            <p>GitHub: <a href="#">github.com/yourusername</a></p>
+          </section>
+      </section>
+    </main>
+  </div>
+
+  <script>
+    var typed = new Typed("#typed-name", {
+      strings: ["Mohd Sufiyan", "Java Developer", "Backend Specialist"],
+      typeSpeed: 50,
+      backSpeed: 30,
+      loop: true
+    });
+
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
