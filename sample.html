@@ -186,7 +186,7 @@
 <body>
   <div class="container">
     <aside class="sidebar">
-      <img src="https://via.placeholder.com/120" alt="Mohd Sufiyan" class="profile-img" />
+      <img src="myimage.jpg" alt="Mohd Sufiyan" class="profile-img" />
       <h2>Mohd Sufiyan</h2>
       <p>Java Developer</p>
       <nav>
@@ -240,10 +240,11 @@
             <div class="skill"><i class="devicon-dotnetcore-plain colored"></i>REST API</div>
             <div class="skill"><i class="devicon-docker-plain colored"></i>Microservices</div>
             <div class="skill"><i class="devicon-azure-plain colored"></i>Azure</div>
-            <div class="skill"><i class="devicon-apachekafka-plain colored"></i>Kafka</div>
+            <div class="skill"><i class="devicon-apachekafka-plain colored"></i >Apache Kafka</div>
             <div class="skill"><i class="devicon-docker-plain colored"></i>Docker</div>
             <div class="skill"><i class="devicon-mysql-plain colored"></i>MySQL</div>
             <div class="skill"><i class="devicon-oracle-original colored"></i>Oracle</div>
+            <div class="skill"><i class="devicon-github-original colored"></i>GitHub</div>
             <div class="skill"><i class="devicon-junit-plain colored"></i>JUnit</div>
           </div>
       </section>
@@ -256,12 +257,26 @@
             <p>GitHub: <a href="#">github.com/yourusername</a></p>
           </section>
       </section>
+      <section id="visitor-count" >
+        <footer class="bg-gray-900">
+            <p>© 2025 Mohd Sufiyan. All rights reserved.</p>
+            <p id="visitor-count" class="text-sm mt-2">Visitor Count: <span id="count">Loading...</span></p>
+            <script>
+              // Simple local visitor counter using localStorage (not accurate across users)
+              const countEl = document.getElementById('count');
+              let visits = localStorage.getItem('visit-count');
+              visits = visits ? parseInt(visits) + 1 : 1;
+              localStorage.setItem('visit-count', visits);
+              countEl.textContent = visits;
+            </script>
+          </footer>
+      </section>
     </main>
   </div>
 
   <script>
     var typed = new Typed("#typed-name", {
-      strings: ["Mohd Sufiyan", "Java Developer", "Backend Specialist"],
+      strings: ["Mohd Sufiyan", "Java Backend FullStack Developer", "Backend Specialist"],
       typeSpeed: 50,
       backSpeed: 30,
       loop: true
