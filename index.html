@@ -124,40 +124,8 @@
       margin-bottom: 10px;
       color: #ccc;
     }
-    @media (max-width: 768px) {
-      .container {
-        flex-direction: column;
-      }
-      .sidebar {
-        width: 100%;
-        flex-direction: row;
-        justify-content: space-around;
-        display: flex;
-        padding: 15px;
-      }
-      .sidebar nav {
-        display: none;
-      }
-      .main-content {
-        padding: 20px;
-        text-align: center;
-      }
-      .main-content h1 {
-        font-size: 2rem;
-      }
-    }
-    @media (max-width: 480px) {
-      .profile-img {
-        width: 80px;
-        height: 80px;
-      }
-      .about-btn {
-        width: 100%;
-      }
-      .download-btn{
-        width: 100%;
-      }
-    }
+    
+    
     .skills-list, .experience-list {
       display: flex;
       flex-wrap: wrap;
@@ -181,7 +149,73 @@
       text-align: center;
       padding: 1rem;
     }
-  </style>
+  
+@media (max-width: 1024px) {
+  .main-content {
+    padding: 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .sidebar {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .sidebar nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .sidebar nav a {
+    width: 80%;
+  }
+  .main-content {
+    padding: 20px;
+    text-align: center;
+  }
+  .main-content h1 {
+    font-size: 2rem;
+  }
+  .skills-list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .profile-img {
+    width: 80px;
+    height: 80px;
+  }
+  .sidebar h2 {
+    font-size: 1.2rem;
+  }
+  .sidebar p {
+    font-size: 0.9rem;
+  }
+  .about-btn,
+  .download-btn {
+    width: 100%;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+  }
+  .main-content h1 {
+    font-size: 1.6rem;
+  }
+  .intro {
+    font-size: 1rem;
+  }
+  .skills-list {
+    gap: 0.5rem;
+  }
+}
+
+</style>
 </head>
 <body>
   <div class="container">
